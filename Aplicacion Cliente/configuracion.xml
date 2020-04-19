@@ -1,0 +1,10 @@
+<client-config>
+
+    <server-connection>
+        <ip-server value="127.0.0.1"></ip-server>
+        <port-server value="5432"></port-server>
+    </server-connection>
+
+    <actualization-rate seconds="5"></actualization-rate>
+
+</client-config>

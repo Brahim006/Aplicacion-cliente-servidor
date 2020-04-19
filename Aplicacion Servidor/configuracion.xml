@@ -1,0 +1,26 @@
+<server-config>
+    <database-connection>
+        <driver dir="org.hsqldb.jdbc.JDBCDriver"></driver>
+        <url dir="jdbc:hsqldb:hsql://localhost/gestortramitesdb"></url>
+        <usr name="SA"></usr>
+        <pwd value=""></pwd>
+    </database-connection>
+
+    <connection-pool>
+        <minsize value="2"></minsize>
+        <maxsize value="10"></maxsize>
+        <steep value="2"></steep>
+    </connection-pool>
+
+    <dao-implementation>
+        <userdao classpath="com.domain.sql.daohsqldbimple.UserDAOHsqldbImple"></userdao>
+        <tramitedao classpath="com.domain.sql.daohsqldbimple.TramiteDAOHsqldbImple"></tramitedao>
+        <interesadodao classpath="com.domain.sql.daohsqldbimple.InteresadoDAOHsqlDBImple"></interesadodao>
+        <movimientodao classpath="com.domain.sql.daohsqldbimple.MovimientoDAOHsqlDBImple"></movimientodao>
+        <areadao classpath="com.domain.sql.daohsqldbimple.AreaDAOHsqlDBImple"></areadao>
+    </dao-implementation>
+
+    <server>
+        <port nro="5432"></port>
+    </server>
+</server-config>
